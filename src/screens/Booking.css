@@ -1,0 +1,90 @@
+
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.cards {
+    width: 75%; /* 75% of the viewport width */
+    /* max-width: 400px; Optional: Set a maximum width for very large screens */
+    height: 75vh; /* 75% of the viewport height */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: 1px solid #ff6600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-sections {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-sections {
+    flex: 2;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    max-width: 100%;
+    height: 70%;
+}
+
+.headings {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subheadings {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .cards{
+        flex-direction: column;
+        width: 90%; /* Adjust the width for smaller screens */
+        height: auto; /* Let the content determine the height */
+    }
+
+    .right-sections {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+   .right-sections{
+    margin-bottom: 40px;
+   }
+}
+
+
+.current-booking{
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(238, 46, 36);
+    border: 0px;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgba(239, 64, 35, 0.12);
+    margin-bottom: 10px;
+}
+
+.shock-icon{
+    margin-right: 5px;
+}

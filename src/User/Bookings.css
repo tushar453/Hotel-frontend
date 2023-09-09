@@ -1,0 +1,7 @@
+.box-1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 100px; */
+    justify-content: space-evenly;
+}
