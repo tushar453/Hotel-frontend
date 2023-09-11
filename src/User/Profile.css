@@ -42,6 +42,28 @@ body {
 .profile-card__info {
     padding: 20px;
 }
+.book-button{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.book-button:hover{
+    
+    text-decoration: none;
+   
+}
+
+.admin-button a{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.admin-button a:hover{
+    color: black;
+    color: #007bff;
+}
 
 .profile-card__info p {
     margin: 10px 0;

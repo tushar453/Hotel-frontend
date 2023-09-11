@@ -1,0 +1,165 @@
+
+
+.About-body {
+
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Cabin', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: bold;
+    margin: 0;
+    /* flex-direction: column; */
+
+}
+
+.About-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* max-width: 930px; */
+    width: 58%;
+    height: 70%;
+    /* flex-direction: column; */
+    /* overflow: hidden; */
+
+}
+
+.About-card-left img {
+    width: 100%;
+    height: auto;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:870px ) {
+    .About-card {
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        width: 80%;
+        height: 80%;
+        flex-direction: column;
+        /* overflow: hidden; */
+    }
+    
+}
+
+.About-small-card {
+    position: absolute;
+    background-color: #fff;
+    width: 140px;
+    height: 80px;
+    top: 60%;
+    /* left: 20px; */
+    left: -20px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Content styles for the small card can be added here */
+}
+
+.About-card-left {
+    flex: 1;
+    position: relative;
+    border-top-left-radius: 30px;
+}
+
+
+
+
+
+.About-small-card p{
+    font-size: 10px;
+    font-weight: bold;
+}
+.About-small-card-h2{
+    font-size: 12px;
+}
+.About-small-card-h2 span{
+    color: red;
+}
+
+.About-card-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.About-small-card-h2{
+    font-size: 18px;
+    color: rgb(32, 31, 31);
+    font-weight: bold;
+}
+
+.About-card-right h3 span {
+    color: red;
+}
+.About-card-right h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.About-card-right h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 20px;
+    font-weight: bolder;
+}
+
+.About-card-right p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:660px ) {
+    .About-card {
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        width: 80%;
+        height: 87%;
+        flex-direction: column;
+        /* overflow: hidden; */
+    }
+    
+
+    .About-card-right {
+        flex: 1 1;
+        padding: 8px;
+    }
+
+    .About-small-card {
+        position: absolute;
+        background-color: #fff;
+        width: 140px;
+        height: 80px;
+        top: 50%;
+        /* left: 20px; */
+        left: -20px;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        /* Content styles for the small card can be added here */
+    }
+
+    .About-card-left img {
+        width: 100%;
+        height: auto;
+        height: 85%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    
+    
+}

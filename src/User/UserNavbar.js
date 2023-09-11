@@ -1,10 +1,15 @@
 import React from 'react'
 import './UserNavebar.css';
 import { NavLink,Link } from "react-router-dom"
+import Logo from '../Logo';
+
 
 const UserNavbar = () => {
   return (
+    <>
     <div>
+      <div className='logo-1'><Logo/></div>
+    
        
       <nav class="user-navbar">
         <div class="user-navbar__container">
@@ -17,6 +22,8 @@ const UserNavbar = () => {
         </div>
     </nav>
     </div>
+   
+    </>
   )
 }
 

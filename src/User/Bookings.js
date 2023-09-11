@@ -11,7 +11,7 @@ const Bookings = () => {
     useEffect(()=>{
       async function fetchData() {
         setloading(true);
-      const data = await(await axios.post('http://127.0.0.1:5000/getroombyuserid',{userid:user._id})).data
+      const data = await(await axios.post('https://refr.onrender.com/getroombyuserid',{userid:user._id})).data
 console.log(data);
 setloading(false);
 setbooking(data)

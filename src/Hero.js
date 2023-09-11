@@ -11,11 +11,13 @@ const Hero = (props) => {
 
     const [text, setText] = useState('Make Yourself At Home in Our'); // Initial text
     const[data , setData] =  useState("");
-
+      const[admin , setAdmin] = useState(false);
     const user = JSON.parse(localStorage.getItem('currentUser'));
 
 
 
+
+  
     // Function to handle arrow click and change text
    
 
@@ -64,14 +66,16 @@ const logout = ()=>{
 
         <ul className={click ?"nav-links active":"nav-links"}>
 
-          
-            <li class="nav-item"><Link to="/"><a href="#">Home</a></Link></li>
+         
 
-            <li className="nav-item li"><Link to="/room"> <a href='#' className='rooms-a' >Rooms</a></Link> </li>
-           
-             <li class="nav-item"><a href="#">About Us</a></li>
 
-            <li class="nav-item"><a href="#">Contact Us</a></li>
+
+            <li className="nav-items li"><Link to="/room"> <a href='#' className='rooms-a' >Home</a></Link> </li>
+            <li className="nav-items li"><Link to="/room"> <a href='#' className='rooms-a' >Rooms</a></Link> </li>
+            <li className="nav-items li"><Link to="/About"> <a href='#' className='rooms-a' >About Us</a></Link> </li>
+             
+
+            <li class="nav-items"><a href="#">Contact Us</a></li>
  
             {user ? (<>
               {/* <div class="dropdown">
@@ -91,7 +95,7 @@ const logout = ()=>{
   </button>
   <div class="dropdown-menu">
   <a  class="dropdown-item"   href='#' onClick={logout}>logout</a>
-<Link to="/user"> <a  class="dropdown-item"   >User</a></Link>
+<a  class="dropdown-item"   ><Link to="/userbookings"> User</Link></a>
  
   </div>
 </div>

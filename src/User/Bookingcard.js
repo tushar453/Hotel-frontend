@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 const Bookingcard = ({booking}) => {
 
 async function cancelbookings(bookingid,roomid){
-const result  = await(await axios.post("http://127.0.0.1:5000/cancelbooking" , {bookingid,roomid})).data
+const result  = await(await axios.post("https://refr.onrender.com/cancelbooking" , {bookingid,roomid})).data
 console.log(result);
 Swal.fire('Congrats' , 'Your booking has been cancelled','success').then(result=>{
   window.location.reload();

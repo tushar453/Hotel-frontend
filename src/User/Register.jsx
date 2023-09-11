@@ -25,7 +25,7 @@ password,
 cpassword
 } 
 
-await axios.post('http://127.0.0.1:5000/register' ,data).then((res)=>{
+await axios.post('https://refr.onrender.com/register' ,data).then((res)=>{
     const da  =  res.data;
      settext(da);
     })

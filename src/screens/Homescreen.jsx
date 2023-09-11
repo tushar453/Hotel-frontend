@@ -3,6 +3,7 @@ import axios from "axios";
 import Roomm from "../Room/Roomm";
 import Hero from "../Hero";
 import moment from "moment";
+import About from "../About/About";
 import { DatePicker, Space } from "antd";
 import "bootstrap/dist/css/bootstrap.min.css";
 const { RangePicker } = DatePicker;
@@ -18,7 +19,7 @@ const Homescreen = () => {
   useEffect(() => {
     async function fetchData() {
       setloading(true);
-      await axios.get("http://127.0.0.1:5000/list").then((res) => {
+      await axios.get("https://refr.onrender.com/list").then((res) => {
         const da = res.data;
         setRooms(da);
         setduplicateRooms(da);
@@ -116,13 +117,14 @@ const Homescreen = () => {
   return (
     <>
       <Hero heading="The Best Rooms and Service For You" />
-      <div className="row">
-        <div className="col-md-3">
+      <About/>
+      <div className="row filter-section">
+        <div className="col-md-3 date-filter">
           <RangePicker format="DD-MM-YYYY" onChange={filterBydate} />
         </div>
    <div className="col-md-3">
     
-    <select value={value} onChange={(e)=>{
+    <select className="type-filter" value={value} onChange={(e)=>{
     filterBYType(e.currentTarget.value)
    }} >
           <option value='all' >All</option>
@@ -131,7 +133,9 @@ const Homescreen = () => {
         </select></div>
         
       </div>
+      
       <div className="container-2">
+        
         {loading ? (
           <h1>Loading...</h1>
         ) : (

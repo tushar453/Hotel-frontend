@@ -52,7 +52,7 @@ useEffect(()=>{
     async function fetchDatas(){
         setloading(true);    
        
-        await axios.post('http://127.0.0.1:5000/getroombyid' ,{roomid}).then((res)=>{
+        await axios.post('https://refr.onrender.com/getroombyid' ,{roomid}).then((res)=>{
         const da  =  res.data;
         setRoom(da);
         setloading(false);
@@ -119,7 +119,7 @@ const bookingdetails = {
 }
 console.log(bookingdetails);
 
-await axios.post('http://127.0.0.1:5000/bookroom' ,bookingdetails).then((res)=>{
+await axios.post('https://refr.onrender.com/bookroom' ,bookingdetails).then((res)=>{
 const da  =  res.data;
 
  setdatas(da);

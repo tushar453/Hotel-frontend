@@ -1,0 +1,18 @@
+.admin-links a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.Admin-navbar{
+    width: 400px;
+    margin:2rem auto;
+}
+.Admin-navbar h1{
+    margin-left: 30px;
+}
+
+.nav-underline{
+margin-left: 10px;
+}
