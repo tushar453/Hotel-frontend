@@ -182,10 +182,10 @@ console.log(datas);
             <div className="body">
                 
            <div class="cards">
-           <div class="left-sections">
+           <div class="booking-left-sections">
               
-               <img class="images" src={room.imageurls} alt="Image"/>
-               <h1 class="headings">{room.name}</h1>
+               <img class="booking-images" src={room.imageurls} alt="Image"/>
+               <h1 class="booking-headings">{room.name}</h1>
            </div>
            <div class="right-sections">
            <h2>Booking Details</h2>
