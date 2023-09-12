@@ -13,7 +13,7 @@ const UserNavbar = () => {
        
       <nav class="user-navbar">
         <div class="user-navbar__container">
-         <Link  to="/profile" >   <a href="#" class="user-navbar__button ">Profile</a></Link>
+         <Link  to="/profile" class="user-navbar__button ">   Profile</Link>
             {/* <Link to={/profile}></Link> */}
 
 
