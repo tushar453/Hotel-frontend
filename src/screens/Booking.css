@@ -54,7 +54,7 @@
 @media (max-width: 768px) {
     .cards{
         flex-direction: column;
-        width: 90%; /* Adjust the width for smaller screens */
+        width: 70%; /* Adjust the width for smaller screens */
         height: auto; /* Let the content determine the height */
     }
 
