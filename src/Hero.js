@@ -95,7 +95,7 @@ const logout = ()=>{
   </button>
   <div class="dropdown-menu">
   <a  class="dropdown-item"   href='#' onClick={logout}>logout</a>
-<a  class="dropdown-item"   ><Link to="/userbookings"> User</Link></a>
+  <Link  class="dropdown-item" to="/userbookings"> User</Link>
  
   </div>
 </div>
