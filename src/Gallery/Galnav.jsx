@@ -8,7 +8,7 @@ import All from './All';
 import Logo from '../Logo';
 const Galnav = () => {
   return (<>
-  <Hero/>
+  <Hero heading = "Scroll Down to Enjoy Best Gallery"/>
 <Logo/>
     <div className='gallery-container'>
     <div className="gallery-heading">
