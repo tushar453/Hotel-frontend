@@ -8,6 +8,7 @@ import All from './All';
 import Logo from '../Logo';
 const Galnav = () => {
   return (<>
+  <Hero/>
 <Logo/>
     <div className='gallery-container'>
     <div className="gallery-heading">
