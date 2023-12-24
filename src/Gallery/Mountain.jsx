@@ -1,10 +1,12 @@
 import React from 'react'
-import Gallery from './Gallery'
+// import Gallery from './Gallerys'
+import Gallerys from './Gallerys'
+import Galnav from './Galnav'
 
 const Mountain = () => {
   return (
     <div>
-        <Gallery/>
+       <Galnav/>
         <div className="All-container">
       <div class="card-2-container">
 

@@ -1,10 +1,12 @@
 import React from 'react'
-import Gallery from './Gallery'
+import Gallerys from './Gallerys'
+import Galnav from './Galnav'
+
 
 const Beach = () => {
   return (
     <div>
-        <Gallery/>
+       <Galnav/>
         <div className="All-container">
       <div class="card-2-container">
 

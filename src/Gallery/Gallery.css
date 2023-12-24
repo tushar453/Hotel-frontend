@@ -98,3 +98,18 @@
     padding: 20px;
   }
   
+
+
+
+  .nav-links-2 {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links-2 li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+  }
+ 

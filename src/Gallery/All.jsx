@@ -1,17 +1,19 @@
 import React from 'react'
-import Gallery from './Gallery'
+import Gallery from './Gallerys'
 import {useEffect} from "react";
 // importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './Gallery.css';
+import Gallerys from './Gallerys';
+import Galnav from './Galnav';
+
 const All = () => {
     useEffect(() => {
         AOS.init();
       }, [])
   return (
     <div>
-        <Gallery/>
+        <Galnav/>
    <div className="All-container">
       <div class="card-2-container">
 

@@ -86,7 +86,7 @@ useEffect(() => {
 
 
             <li className="nav-items li"><Link to="/"> <a href='#' className='rooms-a' >Home</a></Link> </li>
-            <li className="nav-items li"><Link to="/Gallery"> <a href='#' className='rooms-a' >Gallery</a></Link> </li>
+            <li className="nav-items li"><Link to="/Galnav"> <a href='#' className='rooms-a' >Gallery</a></Link> </li>
             <li className="nav-items li"><Link to="/About"> <a href='#' className='rooms-a' >About Us</a></Link> </li>
              
 

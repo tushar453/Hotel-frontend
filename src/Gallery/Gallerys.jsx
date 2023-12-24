@@ -3,10 +3,10 @@ import './Gallery.css';
 import { NavLink,Link } from "react-router-dom"
 import Hero from '../Hero'
 import All from './All';
-const Gallery = () => {
+const Gallerys = () => {
   return (
     <div>
-        <Hero heading = "Scroll Down To enjoy Best Gallery"/>
+        {/* <Hero heading = "Scroll Down To enjoy Best Gallery"/> */}
     <div className='gallery-container'>
         <div className="gallery-heading">
             <h1>Gallery.</h1>
@@ -39,5 +39,5 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Gallerys
 

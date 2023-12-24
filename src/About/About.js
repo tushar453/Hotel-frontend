@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
     <Hero heading="Scroll Down To Know More About Us" />
-    <div className='logo-1'><Logo/></div>
+    {/* <div className='logo-1'><Logo/></div> */}
     <div className='About-body' >
         <div class="About-card">
         <div class="About-card-left">
