@@ -16,6 +16,12 @@ import Adminusers from './admin/Adminusers';
 import Adminroom from './admin/Adminroom';
 import Addroom from './admin/Addroom';
 import About from './About/About';
+import Gallery from './Gallery/Gallery';
+import All from './Gallery/All';
+import Mountain from './Gallery/Mountain';
+import Beach from './Gallery/Beach';
+import City from './Gallery/City';
+
 function App() {
   return (
 <>
@@ -26,7 +32,7 @@ function App() {
        
        <Routes>
        <Route path="/" exact element={<Home/>}/>
-        <Route path="/room" exact element={<Homescreen/>}/>
+        <Route path="/Gallery" exact element={<Gallery/>}/>
          <Route path="/book/:roomid/:fromdate/:todate" element={<Bookingscreen/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
@@ -39,6 +45,10 @@ function App() {
         <Route path="/Adminroom" element={<Adminroom/>}/>
         <Route path="/Addroom" element={<Addroom/>}/>
         <Route path="/About" element={<About/>}/>
+        <Route path="/All" element={<All/>}/>
+        <Route path="/City" element={<City/>}/>
+        <Route path="/Mountain" element={<Mountain/>}/>
+        <Route path="/Beach" element={<Beach/>}/>
         </Routes>
       
      

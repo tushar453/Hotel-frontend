@@ -6,7 +6,7 @@ import { UilUser } from '@iconscout/react-unicons'
 import { NavLink,Link } from "react-router-dom"
 import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch, withAxios } from 'axios'
 import {FaBars , FaTimes} from "react-icons/fa";
-import image from './img/sofa.png';
+import image from './img/sea.jpg';
 const Hero = (props) => {
 
     const [text, setText] = useState('Make Yourself At Home in Our'); // Initial text
@@ -54,24 +54,39 @@ const logout = ()=>{
   localStorage.removeItem('currentUser');
   window.location.href = '/';
 }
+useEffect(() => {
+  document.getElementById('scrollButton').addEventListener('click', function() {
+    // Specify the height you want to scroll to (in pixels)
+    const scrollToHeight = 1200; // Adjust this value to your desired scroll height
+  
+    window.scrollTo({
+      top: scrollToHeight,
+      behavior: 'smooth'
+    });
+  });
+}, [])
+
   return (
     <div class="container-1"   style={{ 
-        backgroundImage: `url(${image})`  , backgroundSize:"cover"
+        backgroundImage: `url(${image})`  , backgroundSize:"cover",backgroundPosition:"center"
       }}>
         
    
     <div class="navbar">
         
-        <div class="logo">Rayal <span>Park</span> </div>
-
+        <div class="logo" data-aos="fade">Rayal <span>Park</span> </div>
+   
+           <div className={click ?"right-menu active":"right-menu"}>
+       
+       
         <ul className={click ?"nav-links active":"nav-links"}>
 
          
 
 
 
-            <li className="nav-items li"><Link to="/room"> <a href='#' className='rooms-a' >Home</a></Link> </li>
-            <li className="nav-items li"><Link to="/room"> <a href='#' className='rooms-a' >Rooms</a></Link> </li>
+            <li className="nav-items li"><Link to="/"> <a href='#' className='rooms-a' >Home</a></Link> </li>
+            <li className="nav-items li"><Link to="/Gallery"> <a href='#' className='rooms-a' >Gallery</a></Link> </li>
             <li className="nav-items li"><Link to="/About"> <a href='#' className='rooms-a' >About Us</a></Link> </li>
              
 
@@ -117,8 +132,12 @@ const logout = ()=>{
            
             
         </ul>
+     
 
-         
+     <div className='reservation'>
+      <h1>reservation</h1>
+     </div>
+         </div>
         
         <div className="hamburger" onClick={handleclick}>
    { click ? (<FaTimes size= {20} style = {{color:"#000"}}/>) : (<FaBars size= {20} style = {{color:"#000"}}/>) }
@@ -126,12 +145,15 @@ const logout = ()=>{
     </div>
 
     <div class="container">
-       
+       <div className='head-text'>
+        <h3 data-aos="fade-left">Welcome To RayalPark</h3>
+        <h1 data-aos="fade-right">Feeling Cool LiKe Your Favorite Place</h1>
+       </div>
         
         
-       
-        <div class="image-text"><span> {props.heading}</span> </div>
-        
+         
+        <div class="image-text" ><span data-aos="fade-left"> {props.heading}</span> </div>
+        <div className='scroll'><button id="scrollButton">Scroll</button></div>
        
 
     </div>

@@ -11,6 +11,7 @@ const Register = () => {
     const[password , setpassword] = useState("");
     const[cpassword , setcpassword] = useState("");
     const[loading , setLoading] = useState(false);
+    // const[image , setImage] = useState()
       const[text , settext] = useState("");
 
 
@@ -22,7 +23,8 @@ if(password == cpassword){
 name,
 email,
 password,
-cpassword
+cpassword,
+
 } 
 
 await axios.post('https://refr.onrender.com/register' ,data).then((res)=>{
@@ -34,7 +36,7 @@ await axios.post('https://refr.onrender.com/register' ,data).then((res)=>{
     setpassword("");
     setcpassword("");
     setLoading(true);
-
+     
 
     console.log(data);
 }
@@ -72,7 +74,12 @@ else{
             <input type="password" id="confirm-password" value={cpassword} onChange={(e)=>{setcpassword(e.target.value)}} required/>
             <label for="confirm-password">Confirm Password</label>
         </div>
+      
+        {/* <div class="input-container">
+            <input type="file" id="confirm-passwords"  onChange={(e)=>{setImage(e.target.files[0])}} required/>
 
+        </div> */}
+      
 
         <div className="buttons-1">
              <button className='book-button extra' onClick={registeruser}     type="submit extra">Sign Up</button> 

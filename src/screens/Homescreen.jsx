@@ -116,7 +116,7 @@ const Homescreen = () => {
 
   return (
     <>
-      <Hero heading="The Best Rooms and Service For You" />
+
       <About/>
       <div className="row filter-section">
         <div className="col-md-3 date-filter">

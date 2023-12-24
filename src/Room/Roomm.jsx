@@ -42,9 +42,9 @@ const Roomm = ({room ,fromdate,todate}) => {
 
       
        <div class="lower-section">
-           <div class="heading">{room.name}</div>
-           <div class="subheading">Starting from : {room.rentperday}</div>
-           <p class="paragraph">Semi double bed 1 guest room, 3 windows</p>
+           <div class="heading" data-aos="fade-left">{room.name}</div>
+           <div class="subheading" data-aos="fade-right">Starting from : {room.rentperday}</div>
+           <p class="paragraph" data-aos="fade-right">Semi double bed 1 guest room, 3 windows</p>
          
            <div className="buttons">
 
@@ -53,7 +53,7 @@ const Roomm = ({room ,fromdate,todate}) => {
          
          
 
-            <button className='book-button extra-2'   onClick={openModal}>Details</button>
+            <button className='book-button extra-2'   onClick={openModal} data-aos="fade-right">Details</button>
            </div>
        </div>
 
