@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website with Popup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Popup container -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form action="#" method="post" class="popup-form">
+        <input type="email" placeholder="Your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- Rest of your website content -->
+  <h1>Welcome to Our Website</h1>
+  <p>Some content here...</p>
+
+  <script>
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Automatically open the popup when the page loads
+    window.onload = function() {
+      document.getElementById('popup').style.display = 'block';
+    };
+  </script>
+</body>
+</html>

@@ -7,6 +7,7 @@ import { NavLink,Link } from "react-router-dom"
 import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch, withAxios } from 'axios'
 import {FaBars , FaTimes} from "react-icons/fa";
 import image from './img/sea.jpg';
+import Popup from './popup/Popup';
 const Hero = (props) => {
 
     const [text, setText] = useState('Make Yourself At Home in Our'); // Initial text
@@ -70,7 +71,7 @@ useEffect(() => {
     <div class="container-1"   style={{ 
         backgroundImage: `url(${image})`  , backgroundSize:"cover",backgroundPosition:"center"
       }}>
-        
+        <Popup/>
    
     <div class="navbar">
         
@@ -146,8 +147,16 @@ useEffect(() => {
 
     <div class="container">
        <div className='head-text'>
+        <div className='text'>
         <h3 data-aos="fade-left">Welcome To RayalPark</h3>
         <h1 data-aos="fade-right">Feeling Cool LiKe Your Favorite Place</h1>
+        </div>
+
+        <div className='popup'>
+
+        </div>
+        
+
        </div>
         
         

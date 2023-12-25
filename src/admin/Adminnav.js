@@ -25,6 +25,10 @@ const Adminnav = () => {
   <Link to="/Adminroom"> <a class="nav-link " aria-current="page" >Rooms</a></Link>
 
   </li>
+  <li class="nav-item admin-links">
+  <Link to="/Adminmessages"> <a class="nav-link " aria-current="page" >Messages</a></Link>
+
+  </li>
 </ul></div></>
   )
 }

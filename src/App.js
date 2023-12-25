@@ -23,11 +23,13 @@ import Beach from './Gallery/Beach';
 import City from './Gallery/City';
 import Gallerys from './Gallery/Gallerys';
 import Galnav from './Gallery/Galnav';
+import Popup from './popup/Popup';
+import Adminmessages from './admin/Adminmessages';
 function App() {
   return (
 <>
 
-  
+
 
       
        
@@ -43,6 +45,7 @@ function App() {
         <Route path="/Admin" element={<Admin/>}/>
         <Route path="/Adminbook" element={<Adminbookings/>}/>
         <Route path="/Adminusers" element={<Adminusers/>}/>
+        <Route path="/Adminmessages" element={<Adminmessages/>}/>
         <Route path="/Adminroom" element={<Adminroom/>}/>
         <Route path="/Addroom" element={<Addroom/>}/>
         <Route path="/About" element={<About/>}/>

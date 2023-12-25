@@ -30,7 +30,8 @@ cpassword,
 await axios.post('https://refr.onrender.com/register' ,data).then((res)=>{
     const da  =  res.data;
      settext(da);
-    })
+    });
+    
     setName("");
     setEmail("");
     setpassword("");
