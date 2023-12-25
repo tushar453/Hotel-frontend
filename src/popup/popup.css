@@ -250,10 +250,10 @@
     }
     .overlayss {
       display: none; /* Hidden by default */
-      position: fixed;
+      /* position: fixed; */
       top: 0;
       left: 0;
-      z-index: 100000000000000000000000000000000900000;
+      z-index: 1000000000000000000000000000000000000000;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
@@ -263,7 +263,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      z-index: 100000000000000000000000000000000000000000000000;
+      z-index: 100000000000;
       width: 70%;
       transform: translate(-50%, -50%);
       /* background-color: white; */
