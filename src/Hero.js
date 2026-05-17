@@ -14,7 +14,7 @@ const Hero = (props) => {
     const[data , setData] =  useState("");
       const[admin , setAdmin] = useState(false);
     const user = JSON.parse(localStorage.getItem('currentUser'));
-
+    
 
 
 
